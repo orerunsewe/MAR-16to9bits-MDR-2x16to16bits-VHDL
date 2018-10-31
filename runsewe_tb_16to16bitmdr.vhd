@@ -49,6 +49,7 @@ END COMPONENT;
 FILE in_file : TEXT open read_mode is 	"runsewe_16to16bitmdrin.txt";   -- Inputs, RST, enr,enl
 FILE exo_file : TEXT open read_mode is 	"runsewe_16to16bitmdrout.txt";   -- Expected output (binary)
 
+
 ---------------------------------------------------------------
 -- SIGNALS 
 ---------------------------------------------------------------
