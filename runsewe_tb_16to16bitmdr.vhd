@@ -48,9 +48,6 @@ END COMPONENT;
 
 FILE in_file : TEXT open read_mode is 	"runsewe_16to16bitmdrin.txt";   -- Inputs, RST, enr,enl
 FILE exo_file : TEXT open read_mode is 	"runsewe_16to16bitmdrout.txt";   -- Expected output (binary)
-FILE out_file : TEXT open  write_mode is  "AMOO_EVENPD_Book_dataout_dacus.txt";
-FILE xout_file : TEXT open  write_mode is "AMOO_EVENPD_Book_TestOut_dacus.txt";
-FILE hex_out_file : TEXT open  write_mode is "AMOO_EVENPD_Book_hex_out_dacus.txt";
 
 ---------------------------------------------------------------
 -- SIGNALS 
@@ -140,12 +137,6 @@ while (not simcomplete) LOOP
 	   end LOOP;
 
 	
-	  write(out_line, comment);
-	  writeline(out_file, out_line);
-	  
-	  write(xout_line, xcomment);
-	  writeline(xout_file, xout_line);
-
 	  
 	ELSE      --Begin processing
 
